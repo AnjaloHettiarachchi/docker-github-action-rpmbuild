@@ -6,4 +6,6 @@ RUN dnf install -y rpmdevtools dnf-utils tree && \
 
 RUN dnf module install -y nodejs:12
 
-CMD [ "node", "-v" ]
+RUN node -v
+
+RUN spectool --version
