@@ -1,4 +1,4 @@
-FROM fedora:latest
+FROM fedora:f33
 
 RUN dnf install -y rpmdevtools dnf-utils tree && \
     dnf clean all && \
@@ -6,6 +6,4 @@ RUN dnf install -y rpmdevtools dnf-utils tree && \
 
 RUN dnf module install -y nodejs:12
 
-RUN node -v
-
-RUN spectool --version
+CMD [ "/bin/bash" ]
