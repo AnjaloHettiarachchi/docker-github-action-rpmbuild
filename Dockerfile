@@ -1,4 +1,4 @@
-FROM fedora:latest
+FROM fedora:34
 
 RUN dnf install -y rpmdevtools dnf-utils tree && \
     dnf clean all && \
